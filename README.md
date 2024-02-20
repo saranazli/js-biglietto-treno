@@ -10,7 +10,8 @@ il programma calcolerà, in base ai km che vuole percorrere l'utente, il prezzo 
 5. inserisco la variabile con lo sconto per minorenni
 6. inserisco la variabile con lo sconto per maggiori di 65
 7. rendo visibili in console i miei dati 
-8. creo le variabili in cui verranno inseriti i prezzi totali in caso di sconto
-9. inserisco le istruzioni condizionali
+8. creo le variabili in cui verranno inseriti i prezzi totali in caso di sconto e del messaggio che sarà visualizzato
+9. inserisco le istruzioni condizionali per i prezzi del biglietto
+10. inserisco le istruzioni condizionali per il messaggio che verrà visualizzato al momento dell'acquisto
 10. stampo il risultato
 11. personalizzo con css il risultato

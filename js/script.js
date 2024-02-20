@@ -34,16 +34,36 @@ let ticketYoung= ' ';
 
 let ticketOld= ' ';
 
+let results= ' ';
+
+let humanResults= ( math.round ( results * 100) / 100 );
+
+let messageDef= ' ';
+
 //9
 
 if ( passengerAge < 18 ) {
-  console.log ( 'Ciao giovane per te il biglietto ha una riduzione e ti costa: ' + ( ticketYoung = priceTicket - youngDiscount ))
+  console.log ( results= ( 'Ciao giovane per te il biglietto ha una riduzione e ti costa: ' + ( ticketYoung = priceTicket - youngDiscount )))
 } else if ( passengerAge > 65 ) {
-  console.log  ( 'Salve, per lei il biglietto ha una riduzione e le costa: ' + ( ticketOld = priceTicket - oldDiscount ))
+  console.log  ( results = ( 'Salve, per lei il biglietto ha una riduzione e le costa: ' + ( ticketOld = priceTicket - oldDiscount )))
 } else {
-  console.log ( 'Buongiorno, in base ai km che perocrrerà il biglietto ha un costo di: ' + priceTicket)
+  console.log ( results= ( 'Buongiorno, in base ai km che percorrerà il biglietto ha un costo di: ' + priceTicket))
 };
 
 //10
 
-document.getElementById
+if ( passengerAge < 18 ) {
+  console.log ( messageDef = 'Ciao giovane per te il biglietto ha una riduzione e ti costa: ' + humanResults )
+} else if ( passengerAge > 65 ) {
+  console.log  ( messageDef = 'Salve, per lei il biglietto ha una riduzione e le costa: ' + humanResults)
+} else {
+  console.log ( messageDef = 'Buongiorno, in base ai km che percorrerà il biglietto ha un costo di: ' + humanResults)
+};
+
+
+
+document.getElementById ('output').innerHTML= `
+<p>
+  ${messageDef}
+</p>
+`;
