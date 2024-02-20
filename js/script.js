@@ -34,8 +34,6 @@ let ticketYoung= ' ';
 
 let ticketOld= ' ';
 
-let message= ' ';
-
 //9
 
 if ( passengerAge < 18 ) {
@@ -49,13 +47,23 @@ if ( passengerAge < 18 ) {
 //10
 
 if ( passengerAge < 18 ) {
-  console.log ( message = 'Ciao giovane per te il biglietto ha una riduzione e ti costa: ' + ticketYoung)
+  console.log ( price = ticketYoung)
 } else if ( passengerAge > 65 ) {
-  console.log  ( message = 'Salve, per lei il biglietto ha una riduzione e le costa: ' + ticketOld)
+  console.log  ( price = ticketOld)
 } else {
-  console.log ( message = 'Buongiorno, in base ai km che percorrerà il biglietto ha un costo di: ' + priceTicket)
+  console.log ( price = priceTicket)
 };
 
+//11
 
+if ( passengerAge < 18 ) {
+  console.log ( message= 'Ciao giovane per te il biglietto ha una riduzione e ti costa: ')
+} else if ( passengerAge > 65 ) {
+  console.log ( message = 'Salve, per lei il biglietto ha una riduzione e le costa: ')
+} else {
+  console.log ( message= 'Buongiorno, in base ai km che percorrerà il biglietto ha un costo di: ')
+};
 
-document.getElementById ('output').innerHTML = message;
+//12
+
+document.getElementById ('output').innerHTML = message + price.toFixed(2) +  ' € '; 
